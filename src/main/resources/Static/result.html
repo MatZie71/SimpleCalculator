@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Simple Calculator</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>SimpleCalc</h1>
+<h2>Wynik</h2><div>
+<p th:text="'liczbaA: ' + ${numbers.getLiczbaA}" />
+<p th:text="'liczbaB: ' + ${numbers.getLiczbaB}" />
+<a href="/numbers">Spróbuj jeszcze raz!</a></div>
+</body>
+</html>

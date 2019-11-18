@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Simple Calculator</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>SimpleCalc</h1>
+<h2>Prosty kalkulator</h2><div>
+<form  form action="#" th:action="@{/processForm}" th:object="${numbers}" method="post">
+    <p>Liczba A: <input type="text" th:field="*{liczbaA}" /></p>
+    <p>Liczba B: <input type="text" th:field="*{liczbaB}" /></p>
+    <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+
+</form></div>
+</body>
+</html>
+
+<!-- method="post"-->
